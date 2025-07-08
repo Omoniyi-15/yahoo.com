@@ -1,5 +1,6 @@
-/* for screen less that 768x wide */
-* {
+@media (max-width: 1700px) {
+
+    * {
     margin: 0;
     padding: 0;
 }
@@ -147,4 +148,6 @@ h1{
         width: 25px;
         gap: 10px;
       
+    }
+
     }
