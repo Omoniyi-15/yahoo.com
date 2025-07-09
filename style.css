@@ -1,6 +1,4 @@
-@media (max-width: 1700px) {
-
-    * {
+* {
     margin: 0;
     padding: 0;
 }
@@ -9,7 +7,6 @@
      body{ 
         width: 100%;
         height: 100vh;
-       flex-wrap: wrap;
         font-family: sans-serif;
      }
            .header {
@@ -33,19 +30,21 @@
                  text-decoration: none;
             }
 
-
-           .container {
+           
+                .container {
                border: 1px solid #e9e3f1;
                height: 500px;
                width: 250px;
                color: black;
                display: flex;
-              flex-direction: column;     
-               margin-left: 70%;
-                padding: 1.5em;
+              flex-direction: column;   
+              margin-left: auto ;
+                padding: 1.5em ;
               border-radius: 15px;
               gap: 25px; 
                    }
+            
+           
  
                   
             .input-container {
@@ -124,7 +123,7 @@ h1{
                
     button {
          width: 250px;
-         padding: 15px;
+         padding: 10px;
          margin: 0;
        background: none;
          color:white;
@@ -150,4 +149,24 @@ h1{
       
     }
 
+/* sTablets */
+@media (min-width:900px) {
+   .container {
+    margin-left: 60%;
+   } 
+   
+}
+
+/* Phones */
+@media (min-width:400px) {
+   .container {
+    margin: auto;
+   }
+}
+
+/*  Desktop */
+@media ( min-width: 1440px) {
+    .container {
+        margin-left: 70%;
     }
+}
